@@ -1,1 +1,4 @@
 # CYB333-Final-Project
+The purpose of this code is to extract file information from a PCAP file. The idea is to capture TCP or UDP file transfers and to be able to pull file type or even the complete file. 
+The initial coding took 4 hours to write and was only able to identify a .zip file extension. The issue I was having was identifying individual packets. To overcome this I had to create sessions that looked for packets that contained the same destination and orgin IP and Port numbers in them. This success made it possible to bracket in on a set of packets for a file transfer. If it could not find a packet set it would create a new session and start again to search.
+My next success is able to identify .doc and .exe files. My next goal is to parse more of the packet session out and determine which IP initiated the file transfer. 
