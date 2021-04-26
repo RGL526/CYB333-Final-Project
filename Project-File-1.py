@@ -1,12 +1,7 @@
-# author: Adam LeTang (Sherpa)
-# Creation date: 19 May 2018
 # purpose: TO autmatically extract files from pcap
-# TODO: put more analysis into this so it can try to figure out if the file is somewhere
-# Bugs: None at this time
 # Dependiences: Scapy (pip install scapy)
 
-
-#imports needed, (binascii to play with hex, and scappy to play with the packets
+#imports needed, (binascii to play with hex, and scappy to play with the packets)
 from scapy.all import *
 from binascii import unhexlify, hexlify 
 import sys
