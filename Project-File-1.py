@@ -75,7 +75,8 @@ def parse_sessions(sessions):
             except:
                continue
 
-      #this if...elif...else statement is for trying to figure out what side the session transfered files..  It is based soley on size. Once it finds that it will attempt to
+      #this if/elif/else statement is for trying to figure out what side the session transfered files..  
+      #It is based soley on size. Once it finds that it will attempt to
       #write the file to disk, then transfer the process over to the get_extensions function.
       #should try testing this with text files, right now ive only done it with binary.
       if ip1_len > ip2_len:
@@ -95,7 +96,7 @@ def parse_sessions(sessions):
          file.close()
          print " Your file was saved as 'test%s.%s'.\n If it has an extension of unkown, add the file header and document type to the get_extensions function." % (count, extension)
       else:
-         print 'I dont fucking know'
+         print 'I dont know what happend to the file'
       count +=1
 
 #Control function, dosent do much besides asking a user what session they want to try...should probably put that in a while loop.
